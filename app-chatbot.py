@@ -165,7 +165,7 @@ def safe_trim(text: str, max_chars: int = 1400) -> str:
 
 def format_retrieval_answer(question: str, contexts: List[Chunk]) -> str:
     blocks: List[str] = []
-    blocks.append("### Retrieved passages (RAG-only)\n")
+    blocks.append("### Retrieved passages)\n")
     blocks.append(f"**Question:** {question}\n")
     blocks.append("---\n")
 
